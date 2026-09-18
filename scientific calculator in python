@@ -1,0 +1,19 @@
+import math
+
+print("===== SCIENTIFIC CALCULATOR =====")
+
+while True:
+    print("\nChoose an operation:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Power")
+    print("6. Square Root")
+    print("7. Sine")
+    print("8. Cosine")
+    print("9. Tangent")
+    print("10. Logarithm")
+    print("11. Natural Log")
+    print("12. Factorial")
+   
