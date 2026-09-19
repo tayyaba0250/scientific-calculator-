@@ -16,4 +16,47 @@ while True:
     print("10. Logarithm")
     print("11. Natural Log")
     print("12. Factorial")
-   
+    print("0. Exit")
+
+    choice = input("\nEnter your choice: ")
+
+    if choice == "0":
+        print("Calculator closed.")
+        break
+
+    elif choice in ["1", "2", "3", "4", "5"]:
+        a = float(input("Enter first number: "))
+        b = float(input("Enter second number: "))
+
+        if choice == "1":
+            print("Result:", a + b)
+
+        elif choice == "2":
+            print("Result:", a - b)
+
+        elif choice == "3":
+            print("Result:", a * b)
+
+        elif choice == "4":
+            if b == 0:
+                print("Error: Cannot divide by zero.")
+            else:
+                print("Result:", a / b)
+
+        elif choice == "5":
+            print("Result:", a ** b)
+
+    elif choice == "6":
+        a = float(input("Enter number: "))
+        if a < 0:
+            print("Error: Cannot find square root of a negative number.")
+        else:
+            print("Result:", math.sqrt(a))
+
+    elif choice == "7":
+        angle = float(input("Enter angle in degrees: "))
+        print("Result:", math.sin(math.radians(angle)))
+
+    elif choice == "8":
+        angle = float(input("Enter angle in degrees: "))
+        
