@@ -1,4 +1,4 @@
-import math
+7import math
 
 print("===== SCIENTIFIC CALCULATOR =====")
 
@@ -59,4 +59,34 @@ while True:
 
     elif choice == "8":
         angle = float(input("Enter angle in degrees: "))
+
+        print("Result:", math.cos(math.radians(angle)))
+
+    elif choice == "9":
+        angle = float(input("Enter angle in degrees: "))
+        print("Result:", math.tan(math.radians(angle)))
+
+    elif choice == "10":
+        a = float(input("Enter number: "))
+        if a <= 0:
+            print("Error: Logarithm requires a positive number.")
+        else:
+            print("Result:", math.log10(a))
+
+    elif choice == "11":
+        a = float(input("Enter number: "))
+        if a <= 0:
+            print("Error: Logarithm requires a positive number.")
+        else:
+            print("Result:", math.log(a))
+
+    elif choice == "12":
+        a = int(input("Enter a non-negative integer: "))
+        if a < 0:
+            print("Error: Factorial requires a non-negative integer.")
+        else:
+            print("Result:", math.factorial(a))
+
+    else:
+        print("Invalid choice. Please try again.")
         
